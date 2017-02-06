@@ -11,10 +11,13 @@ public class cornerStore {
 		System.out.println("How to work the cash registry:");
 		System.out.println("1) Enter an item: e.g Laptop ");
 		String cashierItem=item.nextLine();
+		System.out.println("Enter the price for " + cashierItem);
+		int itemPrice= item.nextInt();
 		//if(cashierItem.compareTo(new Item()))
 		String wb="no";
 		//String b=Item.getName();
-		Item.addItem("Eon");
+		Item.addItem(cashierItem, itemPrice);
+		System.out.println(Item.getName(cashierItem));
 	 
 	}
 
